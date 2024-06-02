@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap');
+body{
+  background-color: #042100;
+}
+*{
+  font-family: 'Tektur', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.container{
+  margin: auto;
+  background-color: #042100;  
+  width: 90%;
+  max-width: 500px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid #b7f397;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+form{
+  width: 90%;
+  height: 20vh;
+  padding: 1rem;
+}
+input[type="text"]{
+  font-size: 1.5rem;
+  background-color: transparent;
+  text-align: right;
+  width: 100%; 
+  height: 100%;
+  border: 0.1rem solid #b7f397;
+  border-radius: 5px;
+  color: white;
+}
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 90%;
+  grid-auto-rows: minmax(auto,auto);
+  grid-gap: 0.4rem;
+}
+.special{
+  color: white;
+  font-weight: 600;
+  background-color: #386a20;
+  transition: 0.3s ease-in-out;
+}
+.special:hover{
+  transform: scale(1.1);
+  font-weight: 900;
+  background-color: #b7f397;
+  color: #305424;
+}
+#clear{
+  grid-column: 1/3;
+  grid-row: 1;
+}
+#result{
+  grid-column: 3/5;
+  grid-row: 5;
+}
+button{
+  color: #386a20;
+  width: 100%;
+  height: 12vh;
+  transition: 0.1s ease;
+  border: none;
+  border-radius: 5px;
+}
+button:hover{
+  translate: -0 -0.1rem;
+  background-color:#d9e7cb;
+  color: #2b3724;
+  cursor: pointer;
+}
